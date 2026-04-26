@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Prompt", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Sarabun", ui-serif, system-ui, serif;
+  
+  --color-primary: #001e40;
+  --color-primary-light: #003366;
+  --color-accent: #3a5f94;
+  --color-surface: #f8f9ff;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-slate-900 font-body;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans;
+  }
+}
+
+.glass {
+  @apply bg-white/10 backdrop-blur-md border border-white/20;
+}
